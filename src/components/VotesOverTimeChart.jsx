@@ -14,7 +14,7 @@ const data = [
 const VotesOverTimeChart = () => {
   return (
     <div className="w-full h-[400px] mt-8">
-      <h2 className="text-2xl font-bold text-center mb-4 text-orange-800">Votes Over Time</h2>
+      <h2 className="text-2xl font-bold text-center mb-4 text-purple-800">Votes Over Time</h2>
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           data={data}
@@ -25,13 +25,13 @@ const VotesOverTimeChart = () => {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" stroke="#fbd38d" />
-          <XAxis dataKey="name" stroke="#dd6b20" />
-          <YAxis stroke="#dd6b20" />
-          <Tooltip contentStyle={{ backgroundColor: '#fffaf0', borderColor: '#fbd38d' }} />
+          <CartesianGrid strokeDasharray="3 3" stroke="#d6bcfa" />
+          <XAxis dataKey="name" stroke="#6b46c1" />
+          <YAxis stroke="#6b46c1" />
+          <Tooltip contentStyle={{ backgroundColor: '#f3e8ff', borderColor: '#d6bcfa' }} />
           <Legend />
-          <Line type="monotone" dataKey="dogs" stroke="#9c4221" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="cats" stroke="#805ad5" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="dogs" stroke="#4c1d95" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="cats" stroke="#7c3aed" activeDot={{ r: 8 }} />
         </LineChart>
       </ResponsiveContainer>
     </div>

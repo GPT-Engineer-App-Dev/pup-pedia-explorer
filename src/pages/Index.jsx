@@ -43,13 +43,13 @@ const AnimalCard = ({ animal }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Card className="w-full border-orange-200 shadow-lg overflow-hidden">
-        <CardHeader className="bg-gradient-to-r from-orange-100 to-pink-100">
-          <CardTitle className="text-2xl flex items-center text-orange-700">
-            {animal.type === "dog" ? <Dog className="mr-2 h-6 w-6 text-orange-600" /> : <Cat className="mr-2 h-6 w-6 text-orange-600" />}
+      <Card className="w-full border-purple-200 shadow-lg overflow-hidden">
+        <CardHeader className="bg-gradient-to-r from-purple-100 to-indigo-100">
+          <CardTitle className="text-2xl flex items-center text-purple-700">
+            {animal.type === "dog" ? <Dog className="mr-2 h-6 w-6 text-purple-600" /> : <Cat className="mr-2 h-6 w-6 text-purple-600" />}
             {animal.name}
           </CardTitle>
-          <CardDescription className="text-orange-600">{animal.description}</CardDescription>
+          <CardDescription className="text-purple-600">{animal.description}</CardDescription>
         </CardHeader>
         <CardContent className="bg-white p-4">
           <img src={animal.image} alt={animal.name} className="w-full h-48 object-cover rounded-md mb-4" />
@@ -61,16 +61,16 @@ const AnimalCard = ({ animal }) => {
             className="overflow-hidden"
           >
             <div className="mt-4">
-              <h3 className="font-bold text-orange-700 mb-2">Fun Facts:</h3>
-              <ul className="list-disc list-inside text-sm text-orange-600 mb-4">
+              <h3 className="font-bold text-purple-700 mb-2">Fun Facts:</h3>
+              <ul className="list-disc list-inside text-sm text-purple-600 mb-4">
                 {animal.facts.map((fact, index) => (
                   <li key={index}>{fact}</li>
                 ))}
               </ul>
-              <h3 className="font-bold text-orange-700 mb-2">Key Traits:</h3>
+              <h3 className="font-bold text-purple-700 mb-2">Key Traits:</h3>
               <div className="flex flex-wrap gap-2 mb-4">
                 {animal.traits.map((trait, index) => (
-                  <span key={index} className="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+                  <span key={index} className="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                     {trait}
                   </span>
                 ))}
@@ -81,17 +81,17 @@ const AnimalCard = ({ animal }) => {
           <div className="flex justify-between items-center mt-4">
             <Button 
               variant="outline" 
-              className="hover:bg-orange-100 text-orange-600 border-orange-300"
+              className="hover:bg-purple-100 text-purple-600 border-purple-300"
               onClick={() => setShowFacts(!showFacts)}
             >
               {showFacts ? "Hide Facts" : "Show Facts"}
             </Button>
             <Button
               variant="ghost"
-              className="flex items-center gap-2 text-orange-600"
+              className="flex items-center gap-2 text-purple-600"
               onClick={() => setLikes(likes + 1)}
             >
-              <Heart className={`h-5 w-5 ${likes > 0 ? 'text-red-500 fill-red-500' : 'text-orange-400'}`} />
+              <Heart className={`h-5 w-5 ${likes > 0 ? 'text-red-500 fill-red-500' : 'text-purple-400'}`} />
               <span>{likes}</span>
             </Button>
           </div>
@@ -103,15 +103,15 @@ const AnimalCard = ({ animal }) => {
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 via-pink-50 to-purple-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 via-indigo-50 to-violet-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <motion.h1 
-          className="text-5xl font-bold text-center mb-8 text-orange-800 flex items-center justify-center"
+          className="text-5xl font-bold text-center mb-8 text-purple-800 flex items-center justify-center"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <PawPrint className="mr-4 h-12 w-12 text-orange-600" />
+          <PawPrint className="mr-4 h-12 w-12 text-purple-600" />
           Dogs vs Cats
         </motion.h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
