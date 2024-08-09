@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dog, Cat, Heart, Paw } from "lucide-react";
+import { Dog, Cat, Heart, PawPrint } from "lucide-react";
 import { motion } from "framer-motion";
 
 const animals = [
@@ -110,7 +110,7 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Paw className="mr-4 h-12 w-12 text-blue-600" />
+          <PawPrint className="mr-4 h-12 w-12 text-blue-600" />
           Dogs vs Cats
         </motion.h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
