@@ -39,23 +39,23 @@ const Index = () => {
   const breed = dogBreeds[currentBreed];
 
   return (
-    <div className="min-h-screen bg-green-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-blue-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8 text-green-800">Discover Dog Breeds</h1>
-        <Card className="w-full border-green-200 shadow-lg">
-          <CardHeader className="bg-green-100">
-            <CardTitle className="text-2xl flex items-center text-green-700">
-              <Dog className="mr-2 h-6 w-6 text-green-600" />
+        <h1 className="text-4xl font-bold text-center mb-8 text-blue-800">Discover Dog Breeds</h1>
+        <Card className="w-full border-blue-200 shadow-lg">
+          <CardHeader className="bg-blue-100">
+            <CardTitle className="text-2xl flex items-center text-blue-700">
+              <Dog className="mr-2 h-6 w-6 text-blue-600" />
               {breed.name}
             </CardTitle>
-            <CardDescription className="text-green-600">{breed.description}</CardDescription>
+            <CardDescription className="text-blue-600">{breed.description}</CardDescription>
           </CardHeader>
           <CardContent className="bg-white">
             <img src={breed.image} alt={breed.name} className="w-full h-64 object-cover rounded-md mb-4" />
-            <p className="text-sm text-green-600 italic mb-4">Fun Fact: {breed.funFact}</p>
+            <p className="text-sm text-blue-600 italic mb-4">Fun Fact: {breed.funFact}</p>
             <div className="flex justify-between">
-              <Button onClick={prevBreed} variant="outline" className="border-green-500 text-green-500 hover:bg-green-50">Previous Breed</Button>
-              <Button onClick={nextBreed} className="bg-green-500 text-white hover:bg-green-600">Next Breed</Button>
+              <Button onClick={prevBreed} variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-50">Previous Breed</Button>
+              <Button onClick={nextBreed} className="bg-blue-500 text-white hover:bg-blue-600">Next Breed</Button>
             </div>
           </CardContent>
         </Card>
