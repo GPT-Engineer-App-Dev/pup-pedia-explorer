@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Dog, Cat, Heart, PawPrint } from "lucide-react";
 import { motion } from "framer-motion";
+import VotesOverTimeChart from "../components/VotesOverTimeChart";
 
 const animals = [
   {
@@ -118,6 +119,7 @@ const Index = () => {
             <AnimalCard key={animal.type} animal={animal} />
           ))}
         </div>
+        <VotesOverTimeChart />
       </div>
     </div>
   );
