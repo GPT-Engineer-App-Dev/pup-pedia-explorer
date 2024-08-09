@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Paw } from "lucide-react";
+import { Dog } from "lucide-react";
 
 const dogBreeds = [
   {
@@ -45,7 +45,7 @@ const Index = () => {
         <Card className="w-full">
           <CardHeader>
             <CardTitle className="text-2xl flex items-center">
-              <Paw className="mr-2 h-6 w-6" />
+              <Dog className="mr-2 h-6 w-6" />
               {breed.name}
             </CardTitle>
             <CardDescription>{breed.description}</CardDescription>
