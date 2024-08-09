@@ -1,4 +1,4 @@
-import { Dog } from "lucide-react";
+import { PawPrint } from "lucide-react";
 import Index from "./pages/Index.jsx";
 
 /**
@@ -6,9 +6,9 @@ import Index from "./pages/Index.jsx";
  */
 export const navItems = [
   {
-    title: "Dog Breeds",
+    title: "Dogs vs Cats",
     to: "/",
-    icon: <Dog className="h-4 w-4 text-blue-600" />,
+    icon: <PawPrint className="h-4 w-4 text-blue-600" />,
     page: <Index />,
   },
 ];
